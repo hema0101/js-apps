@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+}
+body{
+
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition-duration: .5s;
+}
+.container{
+  margin-top: 20px;
+
+
+}
+ .parent{
+ 
+  font-size: 20px;
+  padding: 10px;
+
+  
+}
+.child{
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 2px;
+  background-color: aquamarine;
+
+}
+.acc{
+  background-color: blueviolet  ;
+  border-radius: 20px;
+  padding: 20px;
+}
+.hidden{
+  
+ 
+  display: none;
+}
+ 

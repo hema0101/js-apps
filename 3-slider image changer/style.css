@@ -1,0 +1,95 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    transition: 1s;
+}
+
+.hero_banner{
+
+    background-image: url("images/1.jpg");
+   min-height: 100vh;
+ 
+   background-position: center center;
+   background-size: cover;
+
+background-repeat: no-repeat;
+
+position: relative;
+}
+
+.overlay{
+width: 100%;
+min-height: 100vh;
+background-color: rgba(0, 0, 0, 0.3);
+display: flex;
+justify-content: center;
+align-items: center;
+color: wheat;
+font-size: 4rem;
+
+}
+
+.hero_banner i{
+
+margin: 1rem;
+cursor: pointer;
+color: white;
+transform: translateY(-50%);
+}
+
+.hero_banner i:nth-child(1){
+
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+    
+}
+.hero_banner i:nth-child(2){
+
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+
+}
+
+@media(max-width:1200px)
+{
+
+.overlay h1{
+
+font-size: 3rem;
+
+}
+
+}
+@media(max-width:767px)
+{
+
+.overlay h1{
+
+font-size: 2rem;
+
+text-align: center;
+}
+.hero_banner i{
+
+    
+    cursor: pointer;
+    color: white;
+    transform: translateY(-40%);
+    font-size: 30px;
+    margin: 0;
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#ADFF00">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+  <title>Bootstrap Example</title>
+</head>
+<body class="bg-dark text-white">
+  <section>
+    <div class="container py-2">
+      <h1 class="bg-danger p-2 rounded text-center">Crud System</h1>
+      <div class="crud__form">
+<div class="row">
+  <div class="col-md-6">
+    <label for="productName">productName</label>
+    <input type="text" name="" id="productName" class="form-control bg-transparent text-danger mb-2">
+  </div>
+  <div class="col-md-6">
+    <label for="productCategory">productCategory</label>
+    <input type="text" name="" id="productCategory" class="form-control bg-transparent text-danger mb-2">
+  </div>
+  <div class="col-md-4">
+    <label for="productPrice">productPrice</label>
+    <input type="number" name="" id="productPrice" class="form-control bg-transparent text-danger mb-2">
+  </div>
+  <div class="col-md-4">
+    <label for="productDiscount">productDiscount</label>
+    <input type="number" name="" id="productDiscount" class="form-control bg-transparent text-danger mb-2">
+  </div>
+  <div class="col-md-4">
+    <label for="productQuantity">productQuantity</label>
+    <input type="number" name="" id="productQuantity" class="form-control bg-transparent text-danger mb-2">
+  </div>
+  <div class="col-md-12 text-center">
+    <label for="productDescrption">productDescrption</label>
+    <input type="text" name="" id="productDescrption" class="form-control bg-transparent text-danger mb-2">
+  </div>
+  <button class="btn btn-outline-primary ml-2 px-5" id="addProduct">addProduct</button>
+  <button class="btn btn-outline-primary ml-2 px-5 d-none bb" onclick="updateProduct" id="UpdateProducts">UpdateProduct</button>
+  <!-- <button class="btn btn-outline-danger ml-5 px-5 " id="clear">Clear</button> -->
+</div>
+      </div>
+    </div>
+  </section>
+ <section>
+  <div class="container py-2">
+    <input type="search" name="" id="search" class="form-control bg-transparent my-2 text-danger text-center" placeholder="Search">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Price</th>
+          <th>Discount</th>
+          <th>Quantity</th>
+          <th>Description</th>
+          <th>Update</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+ 
+      </tbody>
+    </table>
+  </div>
+ </section>
+ <script src="js/main.js"></script>
+</body>
+</html>

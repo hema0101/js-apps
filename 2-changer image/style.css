@@ -1,0 +1,53 @@
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+
+
+ .container {
+
+     width: 50%;
+     margin: auto;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+      
+ }
+ @media(max-width:767px){
+    .container{
+        
+    }
+    .image-list {
+         display: grid;
+        grid-template-columns: repeat(1, minmax(150px,1fr));
+        
+        
+    }
+ }
+
+.image{
+    
+}
+.image img{
+     width: 100%;  
+     max-width: 450px;
+    
+}
+
+ .image-list {
+     display: flex;
+      justify-content: center;
+     
+ }
+
+
+ .image-list img {
+     width: 30%;
+     max-width: 150px;
+     border: 1px solid #333;
+ }
+
+
+    
+ 
